@@ -13,7 +13,7 @@ trait Util
      *
      * @return string The screenshot in PNG format.
      */
-    public function takeScreenshotAndSave($save_as = null)
+    public function takeScreenshot($save_as = null)
     {
         $data = $this->driverCommand(static::GET, BaseConstants::$GETSCREENSHOT);
         $screenshot = base64_decode($data);
